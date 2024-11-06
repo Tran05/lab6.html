@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Challenge Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="edit-challenge-container">
+    <div class="edit-challenge-header">Edit Custom Challenge</div>
+    <div class="edit-challenge-form">
+
+    </div>
+</div>
+
+  <div class="edit-challenge-form-group">
+    <label for="challenge-title">Title:</label>
+    <input type="text" id="challenge-title" value="DSA ET Opt7 01">
+  </div>
+
+  <div class="edit-challenge-form-group">
+    <label for="challenge-difficulty">Difficulty:</label>
+    <select id="challenge-difficulty">
+      <option>Easy</option>
+      <option>Medium</option>
+      <option>Hard</option>
+    </select>
+  </div>
+
+  <div class="edit-challenge-form-group">
+    <label for="challenge-description">Short Description:</label>
+    <input type="text" id="challenge-description" value="This is a private challenge">
+  </div>
+
+  <div class="edit-challenge-form-group">
+    <label for="challenge-content">Normal:</label>
+    <textarea id="challenge-content">Write a program to count the number of elements as odd numbers in the array
+Example: Array A = {12, 31, 25, 17, 40, 10, 29}
+=> Number of elements as odd number in array A is : 4</textarea>
+  </div>
+
+  <div class="edit-challenge-footer">
+    <div class="edit-challenge-checkbox">
+        <input type="checkbox" id="starter-code-checkbox" class="starter-checkbox">
+        <div class="starter-code-container">
+            <p><span class="tick">✓</span> Starter code will automatically be generated for all 18 coding languages</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+  <div class="modal-content">
+    <div class="input-section">
+      <label>Input type</label>
+      <select>
+        <option>Array of integers</option>
+      </select>
+      <label>Output type</label>
+      <select>
+        <option>Integer</option>
+      </select>
+    </div>
+
+    <div class="test-cases">
+      <label>Required test cases</label>
+      <div class="test-case">
+        <input type="text" value="12, 31, 25, 17, 40, 10, 29">
+        <span>➡</span>
+        <input type="text" value="4">
+      </div>
+      <div class="test-case">
+        <input type="text" value="1,2,3,4,5,6,7,8,9,10">
+        <span>➡</span>
+        <input type="text" value="5">
+      </div>
+      <div class="test-case">
+        <input type="text" value="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20">
+        <span>➡</span>
+        <input type="text" value="10">
+      </div>
+      <div class="test-case">
+        <input type="text" value="0">
+        <span>➡</span>
+        <input type="text" value="0">
+      </div>
+      <div class="test-case">
+        <input type="text" value="1">
+        <span>➡</span>
+        <input type="text" value="1">
+      </div>
+      <div class="test-case">
+        <input type="text" value="0,2,4,6,8,10">
+        <span>➡</span>
+        <input type="text" value="0">
+      </div>
+      <div class="test-case">
+        <input type="text" value="1,3,5">
+        <span>➡</span>
+        <input type="text" value="3">
+      </div>
+      <div class="test-case">
+        <input type="text" value="8,8,8,8,8,8,8,8,8,8">
+        <span>➡</span>
+        <input type="text" value="0">
+      </div>
+      <div class="test-case">
+        <input type="text" value="1,1,1,1,1,1,1,1,1,1,1,1,1">
+        <span>➡</span>
+        <input type="text" value="13">
+      </div>
+      <button class="button update-button">Update custom challenge</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
